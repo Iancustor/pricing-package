@@ -1,0 +1,76 @@
+.pricing {
+  display: grid;
+  gap: 0.5rem;
+  .buttons button {
+    padding: 12px 35px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttons .selected {
+    background-color: black;
+    color: white;
+  }
+
+  .pricing-cards {
+    width: 80vw;
+    // background-color: red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+
+    .pricing-card {
+      border-radius: 10px;
+      background-color: white;
+      padding: 1rem;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgb(228, 223, 223);
+        .pricing {
+          background-color: azure;
+          padding: 0.5rem;
+          font-weight: bolder;
+          border-radius: 5px;
+        }
+      }
+      ul {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        .list-item {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 8px;
+        }
+        .colo-gray {
+          color: gray;
+        }
+      }
+      small {
+        font-size: 10px;
+      }
+      .cta {
+        margin-bottom: 1rem;
+      }
+      a {
+        padding: 14px 35px;
+        background-color: darkorange;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+    .recommended {
+      background-color: rgb(1, 10, 27);
+      color: white;
+      .card-header {
+        .pricing {
+          background-color: purple;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
